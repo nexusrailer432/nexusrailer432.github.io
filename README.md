@@ -115,20 +115,18 @@ node scripts/check-site.cjs        # expects chromium on PATH
 ## Deploying
 
 **GitHub Pages (how this repo is published).** The `docs/` folder holds the
-built site and Pages is set to serve it from `main` → `/docs`. To update the
-live site:
+built site, and Pages is set to serve `main` → `/docs`. To update the live
+site:
 
 ```bash
 pnpm build
-rm -rf docs && mkdir docs
-cp -r dist/public/. docs/
-cp docs/index.html docs/404.html   # SPA fallback for /docs, /learn and friends
-touch docs/.nojekyll               # stop Jekyll touching the build
+python3 scripts/build-pages.py     # dist/public -> docs/
 ```
 
-`404.html` is a copy of `index.html` on purpose: GitHub Pages has no
-single-page-app fallback, so without it a hard refresh on `/docs` or
-`/learn` returns GitHub's 404 page instead of the app.
+That script is not cosmetic. GitHub Pages has no rewrite rules, so it also
+writes an `index.html` into a folder per route (`docs/learn/`, `docs/docs/`, …)
+so a hard refresh returns 200, plus a `404.html` copy of the shell for any path
+it did not anticipate, plus `.nojekyll` so Jekyll leaves the build alone.
 
 **Anywhere else.** See [DEPLOY.md](DEPLOY.md) — deploy `dist/public` as static
 files and set `SITE_URL` at build time.
