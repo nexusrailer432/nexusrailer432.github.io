@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# A Sitemap line must be an absolute URL, so it is added at build time once
-# the production domain is configured. The sitemap itself is at /sitemap.xml
+Sitemap: https://nexusrailer432.github.io/sitemap.xml
