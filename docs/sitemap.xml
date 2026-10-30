@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Locations are site-root relative. Before going live, prefix them with the
+     production domain at build time: sitemap.org requires absolute URLs. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc></url>
+  <url><loc>/learn</loc></url>
+  <url><loc>/docs</loc></url>
+  <url><loc>/downloads</loc></url>
+  <url><loc>/packages</loc></url>
+  <url><loc>/community</loc></url>
+  <url><loc>/news</loc></url>
+  <url><loc>/contributing</loc></url>
+  <url><loc>/about</loc></url>
+  <url><loc>/security</loc></url>
+  <url><loc>/contact</loc></url>
+  <url><loc>/terms</loc></url>
+  <url><loc>/privacy</loc></url>
+  <url><loc>/search</loc></url>
+  <url><loc>/sitemap</loc></url>
+</urlset>

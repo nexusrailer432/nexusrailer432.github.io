@@ -1,0 +1,3 @@
+import { Link } from "wouter";
+import { ArrowLeft, Search } from "lucide-react";
+export default function NotFound(){return <section className="page-shell not-found"><div className="container narrow"><p className="eyebrow">404 · Not found</p><h1>That page doesn’t exist.</h1><p className="lede">The address may be outdated, or the page may not have been published yet.</p><div className="hero-actions"><Link href="/" className="button primary"><ArrowLeft size={17}/> Back home</Link><Link href="/docs" className="button secondary">Documentation</Link><Link href="/learn" className="button secondary">Learn NOVA</Link><Link href="/search" className="button secondary"><Search size={17}/> Search NOVA</Link></div></div></section>}
