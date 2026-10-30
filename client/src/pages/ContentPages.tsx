@@ -84,8 +84,15 @@ export function community() {
         </div>
         <div>
           <h2>Source</h2>
-          <p>The project is not yet published to a public repository.</p>
-          <span className="placeholder-chip">Repository: not published</span>
+          <p>This website is public on GitHub. The interpreter ships inside its download.</p>
+          <a
+            className="placeholder-chip repo-chip"
+            href="https://github.com/nexusrailer432/nexusrailer432.github.io"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Repository on GitHub
+          </a>
         </div>
       </div>
     </PageShell>
@@ -218,9 +225,10 @@ export function about() {
 
         <h2>What is not decided yet</h2>
         <p>
-          The official repository, license, domain and security-reporting address have not
-          been chosen. Nothing on this site invents them. When they are settled they will
-          appear here and in the site footer.
+          The site is published at this address and its source is public on GitHub. The
+          license and the security-reporting address have still not been chosen, and
+          nothing on this site invents them. When they are settled they will appear here
+          and in the site footer.
         </p>
       </div>
     </PageShell>

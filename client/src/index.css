@@ -630,3 +630,9 @@ html.dark .result mark { background: #4a3c14; color: #ffe9a8; }
 /* Heading anchors sit after the title so headings stay flush with the text. */
 .doc-section h2 { gap: 6px; }
 .doc-section h2 .anchor { margin-left: 2px; }
+
+/* The repository chip in the footer and community page is a real link. */
+a.repo-chip { text-decoration: none; transition: border-color .15s ease, color .15s ease; }
+a.repo-chip:hover { border-color: var(--blue); color: var(--blue); }
+.site-footer a.repo-chip { display: inline-flex; margin: 0; }
+.site-footer a.repo-chip:hover { color: #cfe4f5; border-color: #5b7f9c; }

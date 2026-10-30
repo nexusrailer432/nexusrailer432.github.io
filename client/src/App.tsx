@@ -152,7 +152,9 @@ function Footer() {
       </div>
       <div className="container footer-bottom">
         <span>© NOVA project · Official details are still being established.</span>
-        <span className="placeholder-chip">Repository: not published</span>
+        <a className="placeholder-chip repo-chip" href="https://github.com/nexusrailer432/nexusrailer432.github.io" target="_blank" rel="noreferrer noopener">
+          Source on GitHub
+        </a>
       </div>
     </footer>
   );
